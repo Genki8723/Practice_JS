@@ -4,13 +4,14 @@
 </head>
 <body>
 <script>
-for (let i = 1; i < 100; i++) {
-  if (i % 3 === 0 && i % 5 === 0) {
-    console.log("FizzBuzz",i);
-  } else if (i % 3 === 0) {
-    console.log("Fizz",i);
-  } else if (i % 5 === 0) {
-    console.log("Buzz",i);
+function captal(name){
+  return name = prompt('日本の首都は？');
+}
+while(name === '東京' || name !== '東京'){
+    if(captal(name) === '東京'){
+      alert('正解です');
+    }else{
+      alert('不正解です');
   }
 }
 
