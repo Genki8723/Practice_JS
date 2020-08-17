@@ -1,16 +1,18 @@
 <!DOCTYPE html>
 <head>
-  <meta charset = "utf-8">
+<html lang = 'ja'>
+<meta charset = "utf-8">
 </head>
 <body>
 <script>
-function captal(name){
-  return name = prompt('日本の首都は？');
+capital = (name) => {
+  name = prompt('日本の首都は？');
+  return name;
 };
-while(name === '東京' || name !== '東京'){
-    if(captal(name) === '東京'){
+while(name === '東京' || name !== '東京') {
+    if(captal(name) === '東京') {
       alert('正解です');
-    }else{
+    } else {
       alert('不正解です');
   }
 }
